@@ -8,10 +8,8 @@
             <%= truncate(article.description, length:100) %>
           </div>
           <div class="article-body">
-            Quantity:   <%= article.qty %>
-            Price:      <%= article.price %><br/>
-            Created at: <%= article.created_at %><br/>
-            Updated at: <%= article.updated_at %>
+            <%= article.qty %>
+            <%= article.price %>
           </div>
           <div class="article-actions">
             <%= link_to 'Edit this article', edit_article_path(article), class: "margin btn btn-xs btn-primary"  %>
